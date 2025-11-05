@@ -16,14 +16,14 @@ const LanguageSelect: React.FC<{
   label: string;
 }> = ({ id, value, onChange, label }) => (
   <div className="w-full">
-    <label htmlFor={id} className="block text-sm font-medium text-slate-400 mb-1">
+    <label htmlFor={id} className="block text-sm font-medium text-gray-700 mb-1">
       {label}
     </label>
     <select
       id={id}
       value={value}
       onChange={onChange}
-      className="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-slate-200 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition"
+      className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-dark focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
     >
       {LANGUAGES.map((lang) => (
         <option key={lang.code} value={lang.name}>
@@ -103,12 +103,12 @@ const Translator: React.FC<TranslatorProps> = ({ apiKey, onClearApiKey }) => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto bg-slate-800/50 rounded-lg p-6 sm:p-8 border border-slate-700 shadow-xl space-y-6">
+    <div className="max-w-3xl mx-auto bg-white rounded-lg p-6 sm:p-8 border border-gray-200 shadow-md space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-white">Translator Dashboard</h2>
+        <h2 className="text-2xl font-bold text-dark">Translator Dashboard</h2>
         <button
           onClick={onClearApiKey}
-          className="text-sm bg-slate-700 hover:bg-slate-600 text-slate-300 font-semibold py-1 px-3 rounded-md transition-colors"
+          className="text-sm text-gray-600 hover:text-accent font-semibold py-1 px-3 rounded-md transition-colors"
         >
           Change API Key
         </button>
@@ -116,33 +116,33 @@ const Translator: React.FC<TranslatorProps> = ({ apiKey, onClearApiKey }) => {
 
       {/* File Upload */}
       <div>
-        <label htmlFor="file-upload" className="block text-sm font-medium text-slate-400 mb-1">
+        <label htmlFor="file-upload" className="block text-sm font-medium text-gray-700 mb-1">
           1. Upload Subtitle File
         </label>
-        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-slate-600 border-dashed rounded-md">
+        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
           <div className="space-y-1 text-center">
-             <svg className="mx-auto h-12 w-12 text-slate-500" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            <div className="flex text-sm text-slate-500">
-              <label htmlFor="file-upload" className="relative cursor-pointer bg-slate-800 rounded-md font-medium text-sky-400 hover:text-sky-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-slate-800 focus-within:ring-sky-500">
+             <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            <div className="flex text-sm text-gray-600">
+              <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-accent hover:text-red-700 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary">
                 <span>Upload a file</span>
                 <input id="file-upload" name="file-upload" type="file" className="sr-only" accept=".srt" onChange={handleFileChange} />
               </label>
               <p className="pl-1">or drag and drop</p>
             </div>
-            <p className="text-xs text-slate-600">.SRT files only</p>
-            {fileName && <p className="text-sm text-green-400 pt-2">{fileName}</p>}
+            <p className="text-xs text-gray-500">.SRT files only</p>
+            {fileName && <p className="text-sm text-success pt-2">{fileName}</p>}
           </div>
         </div>
       </div>
       
       {/* Language Selection */}
       <div>
-         <p className="block text-sm font-medium text-slate-400 mb-2">
+         <p className="block text-sm font-medium text-gray-700 mb-2">
           2. Select Languages
         </p>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <LanguageSelect id="source-lang" value={sourceLang} onChange={e => setSourceLang(e.target.value)} label="From" />
-           <div className="text-slate-400 pt-6">
+           <div className="text-gray-500 pt-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
            </div>
           <LanguageSelect id="target-lang" value={targetLang} onChange={e => setTargetLang(e.target.value)} label="To" />
@@ -151,32 +151,32 @@ const Translator: React.FC<TranslatorProps> = ({ apiKey, onClearApiKey }) => {
 
       {/* Action Button */}
       <div className="pt-2">
-         <p className="block text-sm font-medium text-slate-400 mb-2">
+         <p className="block text-sm font-medium text-gray-700 mb-2">
           3. Translate & Download
         </p>
         {!isLoading && !downloadUrl && (
           <button
             onClick={handleTranslate}
             disabled={!file || isLoading}
-            className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-slate-600 disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded-md transition-colors duration-300"
+            className="w-full bg-primary hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded-md transition-colors duration-300"
           >
             Translate Subtitles
           </button>
         )}
         
         {isLoading && (
-           <div className="w-full bg-slate-700 rounded-full h-4 overflow-hidden">
-             <div className="bg-sky-500 h-4 rounded-full transition-all duration-500" style={{ width: `${progress}%` }}></div>
+           <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+             <div className="bg-primary h-4 rounded-full transition-all duration-500" style={{ width: `${progress}%` }}></div>
            </div>
         )}
 
         {downloadUrl && (
-          <div className="text-center p-4 bg-green-900/50 border border-green-700 rounded-md">
-            <p className="text-green-300 mb-4">Translation complete!</p>
+          <div className="text-center p-4 bg-green-50 border border-success/50 rounded-md">
+            <p className="text-green-800 mb-4">Translation complete!</p>
             <a
               href={downloadUrl}
               download={getOutputFilename()}
-              className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-md transition-colors duration-300"
+              className="inline-block bg-success hover:bg-green-600 text-white font-bold py-3 px-8 rounded-md transition-colors duration-300"
             >
               Download Translated .SRT
             </a>
@@ -186,7 +186,7 @@ const Translator: React.FC<TranslatorProps> = ({ apiKey, onClearApiKey }) => {
       </div>
 
       {error && (
-        <div className="bg-red-900/50 text-red-300 border border-red-700 p-3 rounded-md text-sm">
+        <div className="bg-red-50 text-danger border border-danger/50 p-3 rounded-md text-sm">
           <p className="font-bold">Error:</p>
           <p>{error}</p>
         </div>

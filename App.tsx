@@ -1,10 +1,7 @@
-
 import React, { useState } from 'react';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 
-// FIX: Moved GithubIcon from constants.ts to fix JSX parsing issues in a .ts file
-// and removed the corresponding import.
 const GithubIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +30,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-200 font-sans flex flex-col">
-      <header className="py-4 px-6 md:px-12 flex justify-between items-center border-b border-slate-700/50">
-        <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
-          <span className="text-sky-400">Gemini</span> Subtitle Translator
+    <div className="min-h-screen bg-white text-dark font-sans flex flex-col">
+      <header className="py-4 px-6 md:px-12 flex justify-between items-center border-b border-gray-200">
+        <h1 className="text-xl md:text-2xl font-bold tracking-tight">
+          <span className="text-primary">Gemini</span> Subtitle Translator
         </h1>
-        <a href="https://github.com/google/generative-ai-docs/tree/main/site/en/gemini-api/docs/applications/prompting_with_media" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-sky-400 transition-colors">
+        <a href="https://github.com/google/generative-ai-docs/tree/main/site/en/gemini-api/docs/applications/prompting_with_media" target="_blank" rel="noopener noreferrer" className="text-dark hover:text-accent transition-colors">
           {GithubIcon}
         </a>
       </header>
@@ -51,7 +48,7 @@ const App: React.FC = () => {
         )}
       </main>
       
-      <footer className="text-center py-4 px-6 text-sm text-slate-500 border-t border-slate-700/50">
+      <footer className="text-center py-4 px-6 text-sm text-gray-500 border-t border-gray-200">
         Powered by Google Gemini. Built with React & Tailwind CSS.
       </footer>
     </div>

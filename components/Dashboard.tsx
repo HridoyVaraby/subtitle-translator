@@ -25,12 +25,14 @@ const Dashboard: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {!apiKey ? (
-        <ApiKeyInput onSave={handleSaveApiKey} />
-      ) : (
-        <Translator apiKey={apiKey} onClearApiKey={handleClearApiKey} />
-      )}
+    <div className="bg-gray-50 min-h-full py-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {!apiKey ? (
+          <ApiKeyInput onSave={handleSaveApiKey} />
+        ) : (
+          <Translator apiKey={apiKey} onClearApiKey={handleClearApiKey} />
+        )}
+      </div>
     </div>
   );
 };
