@@ -44,9 +44,12 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-dark font-sans flex flex-col">
       <header className="py-4 px-6 md:px-12 flex justify-between items-center border-b border-gray-200" role="banner">
-        <h1 className="text-xl md:text-2xl font-bold tracking-tight">
+        <button
+          onClick={handleClosePolicy}
+          className="text-xl md:text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
+        >
           <span className="text-primary">Varabit</span> Subtitle Translator
-        </h1>
+        </button>
         <a
           href="https://github.com/HridoyVaraby/subtitle-translator"
           target="_blank"

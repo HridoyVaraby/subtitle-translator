@@ -8,9 +8,9 @@ Hiring: https://varabit.com/careers
 
 Canonical: https://subtitle-translator.vercel.app/.well-known/security.txt
 
-# SubTranslate Security Policy
+# Varabit Subtitle Translator Security Policy
 
-We take the security of SubTranslate seriously. If you believe you have found a security vulnerability, please follow responsible disclosure practices.
+We take the security of Varabit Subtitle Translator seriously. If you believe you have found a security vulnerability, please follow responsible disclosure practices.
 
 ## Supported Versions
 

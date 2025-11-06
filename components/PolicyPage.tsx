@@ -17,7 +17,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
               onClick={onBack}
               className="inline-block mb-5 text-primary hover:text-accent transition-colors font-medium"
             >
-              ← Back to SubTranslate
+              ← Back to Varabit Subtitle Translator
             </button>
 
             <h1 className="text-3xl font-bold text-primary border-b-4 border-primary pb-3 mb-5">Terms of Service</h1>
@@ -25,15 +25,15 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-5">
               <p className="text-sm">
-                <strong>Important:</strong> By using SubTranslate, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please do not use our service.
+                <strong>Important:</strong> By using Varabit Subtitle Translator, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please do not use our service.
               </p>
             </div>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">1. Acceptance of Terms</h2>
-            <p className="mb-4">These Terms of Service ("Terms") govern your use of SubTranslate, operated by Varabit Web Design & Development ("Company," "we," "us," or "our"). By accessing or using our service, you agree to be bound by these Terms and all applicable laws and regulations.</p>
+            <p className="mb-4">These Terms of Service ("Terms") govern your use of Varabit Subtitle Translator, operated by Varabit Web Design & Development ("Company," "we," "us," or "our"). By accessing or using our service, you agree to be bound by these Terms and all applicable laws and regulations.</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">2. Description of Service</h2>
-            <p className="mb-4">SubTranslate is an AI-powered subtitle translation tool that uses Google Gemini AI to translate subtitle files (.srt format). The service allows users to:</p>
+            <p className="mb-4">Varabit Subtitle Translator is an AI-powered subtitle translation tool that uses Google Gemini AI to translate subtitle files (.srt format). The service allows users to:</p>
             <ul className="list-disc ml-6 mb-4">
               <li>Upload subtitle files for translation</li>
               <li>Select source and target languages</li>
@@ -66,7 +66,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
             <p className="mb-4">You retain all rights to the subtitle files you upload. By using our service, you grant us a limited, non-exclusive license to process your files solely for the purpose of providing the translation service.</p>
 
             <h3 className="text-xl font-semibold text-primary mt-6 mb-3">5.2 Our Service</h3>
-            <p className="mb-4">The SubTranslate service, including its design, functionality, and underlying technology, is owned by Varabit Web Design & Development and is protected by copyright, trademark, and other intellectual property laws.</p>
+            <p className="mb-4">The Varabit Subtitle Translator service, including its design, functionality, and underlying technology, is owned by Varabit Web Design & Development and is protected by copyright, trademark, and other intellectual property laws.</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">6. API Key and Third-Party Services</h2>
             <ul className="list-disc ml-6 mb-4">
@@ -134,7 +134,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
             </ul>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">16. Acknowledgment</h2>
-            <p className="mb-4">By using SubTranslate, you acknowledge that you have read these Terms of Service, understood them, and agree to be bound by them.</p>
+            <p className="mb-4">By using Varabit Subtitle Translator, you acknowledge that you have read these Terms of Service, understood them, and agree to be bound by them.</p>
           </div>
         );
 
@@ -143,7 +143,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
           <div className="bg-white p-10 rounded-xl shadow-lg">
             <header className="pb-4 mb-6 border-b border-gray-200">
               <div className="flex justify-between items-center">
-                <div className="text-2xl font-bold text-primary">SubTranslate</div>
+                <div className="text-2xl font-bold text-primary">Varabit Subtitle Translator</div>
               </div>
             </header>
 
@@ -151,14 +151,14 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
               onClick={onBack}
               className="inline-block mb-5 text-primary hover:text-accent transition-colors font-medium"
             >
-              ← Back to SubTranslate
+              ← Back to Varabit Subtitle Translator
             </button>
 
             <h1 className="text-3xl font-bold text-primary border-b-4 border-primary pb-3 mb-5">Privacy Policy</h1>
             <p className="text-gray-600 italic mb-5">Last Updated: November 6, 2025</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">1. Introduction</h2>
-            <p className="mb-4">Varabit Web Design & Development ("we," "our," or "us") operates SubTranslate, an AI-powered subtitle translation service. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.</p>
+            <p className="mb-4">Varabit Web Design & Development ("we," "our," or "us") operates Varabit Subtitle Translator, an AI-powered subtitle translation service. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">2. Information We Collect</h2>
 
@@ -238,7 +238,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
               onClick={onBack}
               className="inline-block mb-5 text-primary hover:text-accent transition-colors font-medium"
             >
-              ← Back to SubTranslate
+              ← Back to Varabit Subtitle Translator
             </button>
 
             <h1 className="text-3xl font-bold text-primary border-b-4 border-primary pb-3 mb-5">Cookie Policy</h1>
@@ -248,7 +248,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
             <p className="mb-4">Cookies are small text files that are placed on your device when you visit a website. Local storage is a similar technology that allows websites to store information directly in your browser. These technologies help websites remember information about your visit and improve your browsing experience.</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">2. How We Use Cookies and Local Storage</h2>
-            <p className="mb-4">SubTranslate uses browser local storage (not traditional cookies) for the following purposes:</p>
+            <p className="mb-4">Varabit Subtitle Translator uses browser local storage (not traditional cookies) for the following purposes:</p>
 
             <h3 className="text-xl font-semibold text-primary mt-6 mb-3">2.1 Essential Functionality</h3>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
@@ -386,7 +386,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
               onClick={onBack}
               className="inline-block mb-5 text-primary hover:text-accent transition-colors font-medium"
             >
-              ← Back to SubTranslate
+              ← Back to Varabit Subtitle Translator
             </button>
 
             <h1 className="text-3xl font-bold text-primary border-b-4 border-primary pb-3 mb-5">Acceptable Use Policy</h1>
@@ -394,16 +394,16 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-5">
               <p className="text-sm">
-                <strong>Important:</strong> This Acceptable Use Policy ("AUP") supplements our Terms of Service. By using SubTranslate, you agree to comply with these guidelines. Violations may result in immediate termination of service.
+                <strong>Important:</strong> This Acceptable Use Policy ("AUP") supplements our Terms of Service. By using Varabit Subtitle Translator, you agree to comply with these guidelines. Violations may result in immediate termination of service.
               </p>
             </div>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">1. Purpose</h2>
-            <p className="mb-4">This AUP establishes guidelines for the acceptable use of SubTranslate to ensure a safe, legal, and fair environment for all users. The policy helps protect users, maintain service quality, and comply with legal requirements.</p>
+            <p className="mb-4">This AUP establishes guidelines for the acceptable use of Varabit Subtitle Translator to ensure a safe, legal, and fair environment for all users. The policy helps protect users, maintain service quality, and comply with legal requirements.</p>
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">2. Permitted Uses</h2>
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
-              <h3 className="text-lg font-semibold text-green-800 mb-2">✅ You MAY use SubTranslate for:</h3>
+              <h3 className="text-lg font-semibold text-green-800 mb-2">✅ You MAY use Varabit Subtitle Translator for:</h3>
               <ul className="list-disc ml-6">
                 <li>Translating your own subtitle files</li>
                 <li>Translating content you have permission to translate</li>
@@ -417,7 +417,7 @@ const PolicyPage: React.FC<PolicyPageProps> = ({ policyType, onBack }) => {
 
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">3. Prohibited Uses</h2>
             <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
-              <h3 className="text-lg font-semibold text-red-800 mb-2">❌ You MAY NOT use SubTranslate to:</h3>
+              <h3 className="text-lg font-semibold text-red-800 mb-2">❌ You MAY NOT use Varabit Subtitle Translator to:</h3>
 
               <h3 className="text-lg font-semibold text-red-800 mt-4 mb-2">3.1 Illegal Activities</h3>
               <ul className="list-disc ml-6 mb-3">
